@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Fira+Code:wght@400;600;700&family=Nunito:wght@400;500;700;800;900&family=Margarine&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f9f7f3;
+  --color-paper-deep: #efe9df;
+  --color-paper-light: #fffdf8;
+  --color-ink: #2d3142;
+  --color-ink-soft: rgba(45, 49, 66, 0.72);
+  --color-ink-faint: rgba(45, 49, 66, 0.12);
+  --color-sun: #ffd166;
+  --color-sun-soft: rgba(255, 209, 102, 0.34);
+  --color-crayolablue: #5E7EFF;
+  --color-crayolablue-soft: rgba(94, 126, 255, 0.24);
+  --color-shadow: rgba(45, 49, 66, 0.22);
+}
+
+.font-cabin-sketch{
+  font-family: 'Cabin Sketch', system-ui, sans-serif;
+}
+
+.font-margarine{
+  font-family: "Margarine", sans-serif;
+}
+
+:root {
+  font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #2D3142;
+  background: #f9f7f3;
+  font-synthesis: none;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f9f7f3;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100svh;
+  margin: 0;
+  background: #f9f7f3;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: #FFD166;
+  color: #f9f7f3;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f7f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5E7EFF;
+  border: 3px solid #f9f7f3;
+}
