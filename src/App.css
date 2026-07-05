@@ -482,6 +482,7 @@ strong {
   transition:
     transform 220ms ease,
     box-shadow 220ms ease;
+  height: fit-content;
 }
 
 .project-card:hover {
@@ -503,7 +504,8 @@ strong {
 
 .project-thumb-img {
   position: relative;
-  height: 240px;
+  height: 200px;
+  width: 100%;
   overflow: hidden;
   border-bottom: 1px solid rgba(45, 49, 66, 0.14);
   background:
@@ -511,7 +513,8 @@ strong {
     repeating-linear-gradient(-8deg,
       rgba(255, 253, 248, 0.28) 0 2px,
       transparent 2px 19px);
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
 }
 
 .project-sun .project-thumb {
