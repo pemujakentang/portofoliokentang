@@ -9,6 +9,8 @@
   --sun-soft: rgba(255, 209, 102, 0.34);
   --crayolablue: #5E7EFF;
   --crayolablue-soft: rgba(94, 126, 255, 0.24);
+  --error: #d1495b;
+  --error-soft: rgba(209, 73, 91, 0.18);
   --shadow: rgba(45, 49, 66, 0.22);
 }
 
@@ -357,16 +359,14 @@ strong {
   width: 88px;
   height: 25px;
   background:
-    repeating-linear-gradient(
-      90deg,
+    repeating-linear-gradient(90deg,
       rgba(255, 209, 102, 0.7) 0 7px,
-      rgba(71, 79, 239, 0.5) 7px 12px
-    );
+      rgba(71, 79, 239, 0.5) 7px 12px);
   border: 1px solid rgba(45, 49, 66, 0.14);
   box-shadow: 0 3px 10px rgba(45, 49, 66, 0.14);
 }
 
-.hello-my-name-is{
+.hello-my-name-is {
   border: 2px solid var(--ink);
   box-shadow: 4px 4px 0 rgba(45, 49, 66, 0.2);
 }
@@ -496,11 +496,22 @@ strong {
   border-bottom: 1px solid rgba(45, 49, 66, 0.14);
   background:
     linear-gradient(135deg, rgba(255, 209, 102, 0.54), rgba(71, 107, 239, 0.24)),
-    repeating-linear-gradient(
-      -8deg,
+    repeating-linear-gradient(-8deg,
       rgba(255, 253, 248, 0.28) 0 2px,
-      transparent 2px 19px
-    );
+      transparent 2px 19px);
+}
+
+.project-thumb-img {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(45, 49, 66, 0.14);
+  background:
+    linear-gradient(135deg, rgba(255, 209, 102, 0.54), rgba(71, 107, 239, 0.24)),
+    repeating-linear-gradient(-8deg,
+      rgba(255, 253, 248, 0.28) 0 2px,
+      transparent 2px 19px);
+  object-fit: contain;
 }
 
 .project-sun .project-thumb {
@@ -514,11 +525,9 @@ strong {
 .project-ink .project-thumb {
   background:
     linear-gradient(135deg, rgba(45, 49, 66, 0.96), rgba(71, 93, 239, 0.62)),
-    repeating-linear-gradient(
-      -8deg,
+    repeating-linear-gradient(-8deg,
       rgba(255, 253, 248, 0.16) 0 2px,
-      transparent 2px 19px
-    );
+      transparent 2px 19px);
 }
 
 .doodle-browser-bar {
@@ -603,8 +612,8 @@ strong {
 
 .timeline-image {
   box-shadow:
-      5px 5px 0 rgba(45, 49, 66, 0.5),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.56);
+    5px 5px 0 rgba(45, 49, 66, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.56);
 }
 
 .timeline-item {
@@ -613,6 +622,7 @@ strong {
   grid-template-columns: 0.5fr 120px 1fr;
   gap: 22px;
 }
+
 .timeline-item-inverted {
   position: relative;
   display: grid;
@@ -761,6 +771,42 @@ strong {
   box-shadow: 0 0 0 3px rgba(71, 93, 239, 0.16);
 }
 
+.form-error,
+.form-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(45, 49, 66, 0.16);
+  border-left: 3px solid var(--crayolablue);
+  background: var(--paper-light);
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 14px;
+}
+
+.form-error {
+  border-left-color: var(--error);
+  box-shadow: 4px 4px 0 var(--error-soft);
+  color: var(--error);
+}
+
+.form-error::before {
+  content: '!';
+  font-weight: 800;
+}
+
+.form-status {
+  border-left-color: var(--crayolablue);
+  box-shadow: 4px 4px 0 var(--crayolablue-soft);
+  color: var(--ink-soft);
+}
+
+.form-status::before {
+  color: var(--crayolablue);
+  content: '✓';
+}
+
 .contact-slip {
   display: flex;
   align-items: center;
@@ -804,6 +850,7 @@ strong {
 }
 
 @keyframes float-card {
+
   0%,
   100% {
     transform: translateY(0);
@@ -878,6 +925,7 @@ strong {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

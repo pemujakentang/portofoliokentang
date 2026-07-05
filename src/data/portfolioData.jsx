@@ -1,37 +1,46 @@
-import { BriefcaseBusiness, Code2, Layers3, Palette } from 'lucide-react'
+import {
+  BriefcaseBusiness,
+  Cloud,
+  Code2,
+  Database,
+  Palette,
+  Server,
+} from "lucide-react";
 
 export const navItems = [
-  { label: 'Home', path: '/' },
-  { label: 'Projects', path: '/projects' },
-  { label: 'Experience', path: '/experience' },
-  { label: 'Stack', path: '/stack' },
-  { label: 'Services', path: '/services' },
-  { label: 'Contact', path: '/contact' },
-]
+  { label: "Home", path: "/" },
+  { label: "Projects", path: "/projects" },
+  { label: "Experience", path: "/experience" },
+  { label: "Stack", path: "/stack" },
+  { label: "Services", path: "/services" },
+  { label: "Contact", path: "/contact" },
+];
 
 export const projects = [
   {
-    title: 'Project One',
-    tag: 'Full-stack app',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Built around calm flows, useful dashboards, and crisp developer handoff.',
-    tools: ['React', 'Node.js', 'PostgreSQL'],
-    accent: 'sun',
+    title: "Bonifasius Martin's Portofolio",
+    tag: "Portofolio",
+    copy: "You're looking at it! This is my portofolio, circa 2026.",
+    tools: ["ReactJS", "Vite", "Tailwind CSS"],
+    accent: "sun",
+    image: "portofolio.jpg",
   },
   {
-    title: 'Project Two',
-    tag: 'Interactive site',
-    copy: 'Suspendisse potenti. A playful landing experience with motion, responsive sections, and reusable content blocks.',
-    tools: ['Vite', 'Tailwind', 'GSAP-ready'],
-    accent: 'rose',
+    title: "CANBus Based Vehicle Telemetry Monitoring System",
+    tag: "Research Project",
+    copy: "Reverse-engineered automotive CAN Bus signals using Arduino and established a low-latency MQTT data pipeline. Built a NodeJS, MongoDB, and NextJS full-stack architecture to ingest, process, and visualize live vehicle telemetry in real time.",
+    tools: ["CANBus", "Next.js", "Node.js", "Python", "MongoDB", "IoT", "Arduino", "MQTT"],
+    accent: "rose",
+    image: "canbus_monitoring.jpg"
   },
   {
-    title: 'Project Three',
-    tag: 'Design system',
-    copy: 'Integer vitae justo eget magna fermentum iaculis. Components, tokens, documentation, and UI rules for a growing product.',
-    tools: ['Storybook', 'Figma', 'TypeScript'],
-    accent: 'ink',
+    title: "Project Three",
+    tag: "Design system",
+    copy: "Integer vitae justo eget magna fermentum iaculis. Components, tokens, documentation, and UI rules for a growing product.",
+    tools: ["Storybook", "Figma", "TypeScript"],
+    accent: "ink",
   },
-]
+];
 
 export const timeline = [
   {
@@ -40,7 +49,7 @@ export const timeline = [
     role: "Full Stack Developer Intern",
     place: "Cranium Indonesia",
     type: "Work - Internship",
-    copy: "Participated in development of company’s software products, such as Enterprise Resource Planning Software. Utilized Java Spring Boot, Next JS, and PosgtreSQL in development.",
+    copy: "Participated in development of company’s software products, primarily Enterprise Resource Planning Software. Utilized Java Spring Boot, Next JS, and PosgtreSQL in development.",
     image: "intern_team.webp",
   },
   {
@@ -51,7 +60,7 @@ export const timeline = [
     type: "Student Organisation",
     copy: "Ensured organizational integrity by enforcing behavioral standards and leading development programs to align crew conduct with organizational values.",
     image: "hrd_team.webp",
-    object_position: "object-top"
+    object_position: "object-top",
   },
   {
     start: "Dec 2023",
@@ -111,38 +120,75 @@ export const timeline = [
 
 export const stacks = [
   {
-    title: 'Frontend',
-    icon: Palette,
-    items: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
-  },
-  {
-    title: 'Backend',
+    title: "Languages",
     icon: Code2,
-    items: ['Node.js', 'Express', 'REST API', 'Auth flows'],
+    items: [
+      "JavaScript",
+      "Python",
+      "Java",
+      "PHP",
+      "C#",
+      "C++",
+      "C",
+      "Kotlin",
+    ],
   },
   {
-    title: 'Database',
-    icon: Layers3,
-    items: ['PostgreSQL', 'MongoDB', 'Prisma', 'Supabase'],
+    title: "Frontend",
+    icon: Palette,
+    items: ["React", "React Native", "Ionic React", "Next.js", "Vite", "Tailwind CSS"],
   },
   {
-    title: 'Workflow',
+    title: "Backend",
+    icon: Server,
+    items: [
+      "Node.js",
+      "Express.js",
+      "Laravel",
+      "Spring Boot",
+      ".NET",
+      "REST APIs",
+    ],
+  },
+  {
+    title: "Databases",
+    icon: Database,
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase", "Prisma"],
+  },
+  {
+    title: "Tools & Platforms",
     icon: BriefcaseBusiness,
-    items: ['Git', 'Figma', 'Testing', 'Documentation'],
+    items: [
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "Jira",
+      "Docker",
+      "Visual Studio",
+      "Android Studio",
+      "Jupyter",
+      "Figma",
+      "Arduino"
+    ],
   },
-]
+  {
+    title: "OS, Cloud, & Server",
+    icon: Cloud,
+    items: ["Windows", "Linux (Ubuntu)", "Azure Cloud", "Plesk", "cPanel"],
+  },
+];
 
 export const services = [
   {
-    title: 'Web Portfolio & Landing Pages',
-    copy: 'Distinctive responsive websites with a strong first impression, thoughtful interactions, and maintainable components.',
+    title: "Web Portfolio & Landing Pages",
+    copy: "Distinctive responsive websites with a strong first impression, thoughtful interactions, and maintainable components.",
   },
   {
-    title: 'Full-stack Feature Build',
-    copy: 'From data model to UI polish: user flows, API integration, dashboards, forms, and deployment-ready structure.',
+    title: "Full-stack Feature Build",
+    copy: "From data model to UI polish: user flows, API integration, dashboards, forms, and deployment-ready structure.",
   },
   {
-    title: 'UI Refresh & Frontend Cleanup',
-    copy: 'Sharper layouts, better responsive behaviour, reusable Tailwind patterns, and improved interaction states.',
+    title: "UI Refresh & Frontend Cleanup",
+    copy: "Sharper layouts, better responsive behaviour, reusable Tailwind patterns, and improved interaction states.",
   },
-]
+];

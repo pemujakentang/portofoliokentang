@@ -1,7 +1,7 @@
 import { ArrowRight, Code2, Mail, Sparkles } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import heroImg from '../assets/images/boni_cleaned.webp'
-import heroImg2 from '../assets/images/jongkok-di-atap.jpg'
+// import heroImg2 from '../assets/images/jongkok-di-atap.jpg'
 import { Tape } from '../components/Tape'
 import { HelloMyNameIs } from '../components/HelloMyNameIs'
 
@@ -11,21 +11,21 @@ const metrics = [
   ['Approach', '1 rule', 'Make it useful first, then make it memorable.'],
 ]
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-function pickHeroImage(value){
-  let heroImage;
-  if(value==0){
-    heroImage = heroImg;
-  } else if (value ==1){
-    heroImage = heroImg2;
-  } else {
-    heroImage = heroImg;
-  }
-  return heroImage;
-}
+// function pickHeroImage(value){
+//   let heroImage;
+//   if(value==0){
+//     heroImage = heroImg;
+//   } else if (value ==1){
+//     heroImage = heroImg2;
+//   } else {
+//     heroImage = heroImg;
+//   }
+//   return heroImage;
+// }
 
 export function Home() {
   return (
@@ -64,16 +64,16 @@ export function Home() {
           <div className="portrait-card">
             <Tape className="left-1/2 top-[-18px] -translate-x-1/2 rotate-[-2deg]" />
             <HelloMyNameIs className="absolute -bottom-5 -inset-e-10 -rotate-12" />
-            <img
+            {/* <img
               src={pickHeroImage(getRandomInt(1,2))}
               alt="Placeholder portrait sketch"
               className="h-full mx-auto w-full object-cover object-[0%_35%] sm:h-64 sm:w-64 bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"
-            />
-            {/* <img
+            /> */}
+            <img
               src={heroImg}
               alt="Placeholder portrait sketch"
               className="h-full mx-auto w-full object-cover object-[0%_35%] sm:h-64 sm:w-64 bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"
-            /> */}
+            />
             {/* <div className="portrait-caption">portrait-placeholder.png</div> */}
           </div>
           <div className="sticky-note sticky-note-top p-3">
