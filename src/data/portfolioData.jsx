@@ -12,7 +12,7 @@ export const navItems = [
   { label: "Projects", path: "/projects" },
   { label: "Experience", path: "/experience" },
   { label: "Stack", path: "/stack" },
-  { label: "Services", path: "/services" },
+  // { label: "Services", path: "/services" },
   { label: "Contact", path: "/contact" },
 ];
 

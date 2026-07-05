@@ -3,9 +3,9 @@ import { Tape } from './Tape'
 
 export function PageHeader({ eyebrow, title, copy, icon: Icon = PenLine }) {
   return (
-    <section className="page-shell pb-8 pt-12 sm:pt-16">
+    <section className="page-shell pb-8 pt-6 sm:pt-16">
       <div className="scrap-panel relative p-6 sm:p-8 lg:p-10" data-reveal>
-        <Tape className="-left-4 top-5 rotate-[-13deg]" />
+        <Tape className="-left-4 top-1 rotate-[-13deg]" />
         <div className="eyebrow-badge">
           <Icon size={16} />
           {eyebrow}

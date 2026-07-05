@@ -8,17 +8,15 @@ export function Services() {
     <>
       <PageHeader
         eyebrow="Services"
-        title="Ways I can help a team or client."
-        copy="Keep this page short and practical. Recruiters and collaborators should understand what kind of value you can bring quickly."
+        title="Ways I can help you."
+        copy=""
         icon={Handshake}
       />
       <section className="page-shell grid gap-6 pb-16 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="scrap-panel h-fit p-6" data-reveal>
           <h2 className="font-heading text-4xl">The offer board</h2>
           <p className="body-copy mt-4 text-sm leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this with a concise
-            statement about your ideal collaboration, preferred stack, and the outcomes you care
-            about.
+            I can adapt well to your requirements.
           </p>
           <div className="mt-6 grid gap-3 font-mono text-sm">
             <span className="check-line">Responsive from the first sketch</span>
