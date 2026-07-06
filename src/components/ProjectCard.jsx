@@ -34,7 +34,7 @@ export function ProjectCard({ project, index, images }) {
       ref={cardRef}
       className={`project-card project-${project.accent}`}
       data-reveal
-      style={{ transitionDelay: `${index * 100}ms` }}
+      style={{ transitionDelay: `${index * 50}ms` }}
     >
       {image ? (
         <img src={image} alt="" className="project-thumb-img" />

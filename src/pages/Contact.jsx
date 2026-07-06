@@ -48,7 +48,7 @@ export function Contact() {
       <PageHeader
         eyebrow="Contact"
         title="Got a role, project, or idea?"
-        copy="Hit me up."
+        copy="Hit me up. Let's work something out. I'm open to any and all opportunities!"
         icon={Mail}
       />
       <section className="page-shell grid gap-6 pb-16 lg:grid-cols-[1fr_0.9fr]">
