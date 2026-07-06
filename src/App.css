@@ -970,3 +970,136 @@ strong {
     transition-duration: 1ms !important;
   }
 }
+
+.now-playing-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 340px;
+  padding: 12px 16px;
+  border: 1px solid rgba(45, 49, 66, 0.16);
+  background: var(--paper-light);
+  box-shadow: 8px 8px 0 rgba(45, 49, 66, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+a.now-playing-card:hover {
+  box-shadow: 12px 12px 0 var(--crayolablue-soft);
+  transform: translateY(-3px) rotate(-0.5deg);
+}
+
+.now-playing-art {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border: 1px solid rgba(45, 49, 66, 0.16);
+  background: rgba(45, 49, 66, 0.06);
+  color: rgba(45, 49, 66, 0.5);
+}
+
+.now-playing-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.now-playing-meta {
+  min-width: 0;
+}
+
+.now-playing-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--crayolablue);
+}
+
+.now-playing-title {
+  margin: 2px 0 0;
+  overflow: hidden;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.now-playing-artist {
+  margin: 2px 0 0;
+  overflow: hidden;
+  color: rgba(45, 49, 66, 0.7);
+  font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* tiny animated equalizer bars shown only while actively playing */
+.now-playing-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  height: 10px;
+  gap: 2px;
+}
+
+.now-playing-bars span {
+  width: 2px;
+  background: var(--crayolablue);
+  animation: now-playing-bounce 0.9s ease-in-out infinite;
+}
+
+.now-playing-bars span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.now-playing-bars span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.now-playing-bars span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes now-playing-bounce {
+
+  0%,
+  100% {
+    height: 3px;
+  }
+
+  50% {
+    height: 10px;
+  }
+}
+
+.now-playing-skeleton-line {
+  display: block;
+  height: 10px;
+  margin-top: 6px;
+  background: rgba(45, 49, 66, 0.12);
+  border-radius: 2px;
+  animation: now-playing-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes now-playing-pulse {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
