@@ -18,6 +18,14 @@ export const navItems = [
 
 export const projects = [
   {
+    title: "CAN Bus Signal Identification Using XGBoost Classifier",
+    tag: "Thesis Project",
+    copy: "Developed a machine learning model to identify automotive CAN Bus signals using XGBoost Classifier, supporting efficient signal identification for automotive applications.",
+    tools: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy", "Jupyter"],
+    accent: "ink",
+    image: "thesis.webp",
+  },
+  {
     title: "Bonifasius Martin's Portofolio",
     tag: "Portofolio",
     copy: "You're looking at it! This is my portofolio, circa 2026.",
