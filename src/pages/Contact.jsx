@@ -129,7 +129,7 @@ export function Contact() {
           <ContactSlip
             icon={FileUser}
             href={
-              "https://drive.google.com/file/d/1IVgJMrTBMdBEI06ODZay8qINabX9Trru/view?usp=sharing"
+              "https://drive.google.com/file/d/1jhwZeF3OUSnglXG0OKg6fHr2Bb7a3zED/view?usp=sharing"
             }
           >
             Grab my CV!
